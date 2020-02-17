@@ -1,0 +1,956 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>调价操作流程</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/调价操作流程/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/prototypePre.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/prototypePost.js"></script>
+    <script src="files/调价操作流程/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12146" class="ax_default box_3">
+        <div id="u12146_div" class=""></div>
+        <div id="u12146_text" class="text ">
+          <p><span>商品运营</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12147" class="ax_default box_3">
+        <div id="u12147_div" class=""></div>
+        <div id="u12147_text" class="text ">
+          <p><span>定价</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12148" class="ax_default label">
+        <div id="u12148_div" class=""></div>
+        <div id="u12148_text" class="text ">
+          <p><span>&nbsp;区间售价 = 调价成本 * 定价基数 * (1+定价组利率 +行情利率）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12149" class="ax_default box_2">
+        <div id="u12149_div" class=""></div>
+        <div id="u12149_text" class="text ">
+          <p><span>调价成本=max(最近一次入库成本,均摊成本,厂家指导价)</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12150" class="ax_default box_2">
+        <div id="u12150_div" class=""></div>
+        <div id="u12150_text" class="text ">
+          <p><span>定价基数，默认1，做倍数调节</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12151" class="ax_default box_2">
+        <div id="u12151_div" class=""></div>
+        <div id="u12151_text" class="text ">
+          <p><span>定价组利率=品牌利率+目录利率+渠道利率+成本区间利率+规模利率</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12152" class="ax_default box_2">
+        <div id="u12152_div" class=""></div>
+        <div id="u12152_text" class="text ">
+          <p><span>行情利率：在定价组利率之外调节上下浮动的利率</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12153" class="ax_default line">
+        <div id="u12153_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (水平线) -->
+      <div id="u12154" class="ax_default line">
+        <img id="u12154_img" class="img " src="images/调价操作流程/u12154.png"/>
+      </div>
+
+      <!-- Unnamed (水平线) -->
+      <div id="u12155" class="ax_default line">
+        <img id="u12155_img" class="img " src="images/调价操作流程/u12154.png"/>
+      </div>
+
+      <!-- Unnamed (水平线) -->
+      <div id="u12156" class="ax_default line">
+        <img id="u12156_img" class="img " src="images/调价操作流程/u12156.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12157" class="ax_default line">
+        <div id="u12157_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (水平线) -->
+      <div id="u12158" class="ax_default line">
+        <img id="u12158_img" class="img " src="images/调价操作流程/u12158.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12159" class="ax_default label">
+        <div id="u12159_div" class=""></div>
+        <div id="u12159_text" class="text ">
+          <p><span>&nbsp;厂家指导价售价 = 调价成本 * (1 + 厂家指导价定价组规模利率)</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12160" class="ax_default label">
+        <div id="u12160_div" class=""></div>
+        <div id="u12160_text" class="text ">
+          <p><span>独立定价</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (水平线) -->
+      <div id="u12161" class="ax_default line">
+        <img id="u12161_img" class="img " src="images/调价操作流程/u12161.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12162" class="ax_default box_3">
+        <div id="u12162_div" class=""></div>
+        <div id="u12162_text" class="text ">
+          <p><span>商品销售管理</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12163" class="ax_default box_3">
+        <div id="u12163_div" class=""></div>
+        <div id="u12163_text" class="text ">
+          <p><span>调价操作</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12164" class="ax_default box_3">
+        <div id="u12164_div" class=""></div>
+        <div id="u12164_text" class="text ">
+          <p><span>权限管理</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12165" class="ax_default box_3">
+        <div id="u12165_div" class=""></div>
+        <div id="u12165_text" class="text ">
+          <p><span>促销折扣</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12166" class="ax_default box_3">
+        <div id="u12166_div" class=""></div>
+        <div id="u12166_text" class="text ">
+          <p><span>上架/(自动)下架</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12167" class="ax_default box_3">
+        <div id="u12167_div" class=""></div>
+        <div id="u12167_text" class="text ">
+          <p><span>商品分配/去除</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12168" class="ax_default box_3">
+        <div id="u12168_div" class=""></div>
+        <div id="u12168_text" class="text ">
+          <p><span>去除/设为</span></p><p><span>大批特卖</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12169" class="ax_default box_3">
+        <div id="u12169_div" class=""></div>
+        <div id="u12169_text" class="text ">
+          <p><span>定价基数调整</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12170" class="ax_default box_3">
+        <div id="u12170_div" class=""></div>
+        <div id="u12170_text" class="text ">
+          <p><span>行情利率调整</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12171" class="ax_default box_3">
+        <div id="u12171_div" class=""></div>
+        <div id="u12171_text" class="text ">
+          <p><span>定价组调整</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12172" class="ax_default box_3">
+        <div id="u12172_div" class=""></div>
+        <div id="u12172_text" class="text ">
+          <p><span>商品标签</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12173" class="ax_default box_3">
+        <div id="u12173_div" class=""></div>
+        <div id="u12173_text" class="text ">
+          <p><span>商品定位调整</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12174" class="ax_default box_3">
+        <div id="u12174_div" class=""></div>
+        <div id="u12174_text" class="text ">
+          <p><span>商品标签调整</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12175" class="ax_default box_3">
+        <div id="u12175_div" class=""></div>
+        <div id="u12175_text" class="text ">
+          <p><span>促销活动申请</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12176" class="ax_default box_3">
+        <div id="u12176_div" class=""></div>
+        <div id="u12176_text" class="text ">
+          <p><span>独立定价设置</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12177" class="ax_default box_3">
+        <div id="u12177_div" class=""></div>
+        <div id="u12177_text" class="text ">
+          <p><span>厂家指导价明细</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12178" class="ax_default box_3">
+        <div id="u12178_div" class=""></div>
+        <div id="u12178_text" class="text ">
+          <p><span>导入调价明细</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12179" class="ax_default box_3">
+        <div id="u12179_div" class=""></div>
+        <div id="u12179_text" class="text ">
+          <p><span>是否订货折扣</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12180" class="ax_default box_3">
+        <div id="u12180_div" class=""></div>
+        <div id="u12180_text" class="text ">
+          <p><span>展示期货区间</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12181" class="ax_default box_3">
+        <div id="u12181_div" class=""></div>
+        <div id="u12181_text" class="text ">
+          <p><span>导入</span></p><p><span>批量采购成本价</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12182" class="ax_default line">
+        <div id="u12182_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (水平线) -->
+      <div id="u12183" class="ax_default line">
+        <img id="u12183_img" class="img " src="images/定价配置信息/u717.png"/>
+      </div>
+
+      <!-- Unnamed (水平线) -->
+      <div id="u12184" class="ax_default line">
+        <img id="u12184_img" class="img " src="images/定价配置信息/u717.png"/>
+      </div>
+
+      <!-- Unnamed (花括号) -->
+      <div id="u12185" class="ax_default line">
+        <img id="u12185_img" class="img " src="images/调价操作流程/u12185.png"/>
+      </div>
+
+      <!-- Unnamed (水平线) -->
+      <div id="u12186" class="ax_default line">
+        <img id="u12186_img" class="img " src="images/调价操作流程/u12186.png"/>
+      </div>
+
+      <!-- Unnamed (Right Arrow) -->
+      <div id="u12187" class="ax_default line">
+        <img id="u12187_img" class="img " src="images/调价操作流程/u12187.png"/>
+      </div>
+
+      <!-- Unnamed (Right Arrow) -->
+      <div id="u12188" class="ax_default line">
+        <img id="u12188_img" class="img " src="images/调价操作流程/u12187.png"/>
+      </div>
+
+      <!-- Unnamed (Right Arrow) -->
+      <div id="u12189" class="ax_default line">
+        <img id="u12189_img" class="img " src="images/调价操作流程/u12187.png"/>
+      </div>
+
+      <!-- Unnamed (花括号) -->
+      <div id="u12190" class="ax_default line">
+        <img id="u12190_img" class="img " src="images/调价操作流程/u12185.png"/>
+      </div>
+
+      <!-- Unnamed (水平线) -->
+      <div id="u12191" class="compound ax_default line" WidgetHeight="1" WidgetWidth="116" CompoundMode="true">
+        <img id="u12191_img" class="singleImg img " src="images/调价操作流程/u12191.png"/>
+        <div id="u12191p000" class="ax_vector_shape" WidgetTopLeftX="-0.475409836065574" WidgetTopLeftY="0" WidgetTopRightX="0.475409836065574" WidgetTopRightY="0" WidgetBottomLeftX="-0.475409836065574" WidgetBottomLeftY="0.166666666666667" WidgetBottomRightX="0.475409836065574" WidgetBottomRightY="0.166666666666667">
+          <img id="u12191p000_img" class="img " src="images/调价操作流程/u12191p000.png"/>
+        </div>
+        <div id="u12191p001" class="ax_vector_shape" WidgetTopLeftX="-0.0909090909090909" WidgetTopLeftY="-0.05" WidgetTopRightX="5.18181818181818" WidgetTopRightY="-0.05" WidgetBottomLeftX="-0.0909090909090909" WidgetBottomLeftY="0" WidgetBottomRightX="5.18181818181818" WidgetBottomRightY="0">
+          <img id="u12191p001_img" class="img " src="images/调价操作流程/u12191p001.png"/>
+        </div>
+        <div id="u12191p002" class="ax_vector_shape" WidgetTopLeftX="4.23076923076923" WidgetTopLeftY="0.05" WidgetTopRightX="-0.230769230769231" WidgetTopRightY="0.05" WidgetBottomLeftX="4.23076923076923" WidgetBottomLeftY="0" WidgetBottomRightX="-0.230769230769231" WidgetBottomRightY="0">
+          <img id="u12191p002_img" class="img " src="images/调价操作流程/u12191p002.png"/>
+        </div>
+        <div id="u12191_text" class="text ">
+          <p><span>操作确认</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12192" class="ax_default box_3">
+        <div id="u12192_div" class=""></div>
+        <div id="u12192_text" class="text ">
+          <p><span>调价预览</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (水平线) -->
+      <div id="u12193" class="ax_default line">
+        <img id="u12193_img" class="img " src="images/调价操作流程/u12193.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12194" class="ax_default line">
+        <div id="u12194_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12195" class="ax_default box_3">
+        <div id="u12195_div" class=""></div>
+        <div id="u12195_text" class="text ">
+          <p><span>调价取消</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12196" class="ax_default box_3">
+        <div id="u12196_div" class=""></div>
+        <div id="u12196_text" class="text ">
+          <p><span>调价确认</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (水平线) -->
+      <div id="u12197" class="compound ax_default line" WidgetHeight="1" WidgetWidth="28" CompoundMode="true">
+        <img id="u12197_img" class="singleImg img " src="images/调价操作流程/u12197.png"/>
+        <div id="u12197p000" class="ax_vector_shape" WidgetTopLeftX="-0.4375" WidgetTopLeftY="0" WidgetTopRightX="0.4375" WidgetTopRightY="0" WidgetBottomLeftX="-0.4375" WidgetBottomLeftY="0.166666666666667" WidgetBottomRightX="0.4375" WidgetBottomRightY="0.166666666666667">
+          <img id="u12197p000_img" class="img " src="images/调价操作流程/u12197p000.png"/>
+        </div>
+        <div id="u12197p001" class="ax_vector_shape" WidgetTopLeftX="0" WidgetTopLeftY="-0.25" WidgetTopRightX="7" WidgetTopRightY="-0.25" WidgetBottomLeftX="0" WidgetBottomLeftY="0" WidgetBottomRightX="7" WidgetBottomRightY="0">
+          <img id="u12197p001_img" class="img " src="images/调价操作流程/u12197p001.png"/>
+        </div>
+        <div id="u12197p002" class="ax_vector_shape" WidgetTopLeftX="1.2" WidgetTopLeftY="0.05" WidgetTopRightX="-0.2" WidgetTopRightY="0.05" WidgetBottomLeftX="1.2" WidgetBottomLeftY="0" WidgetBottomRightX="-0.2" WidgetBottomRightY="0">
+          <img id="u12197p002_img" class="img " src="images/调价操作流程/u12197p002.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (水平线) -->
+      <div id="u12198" class="compound ax_default line" WidgetHeight="1" WidgetWidth="28" CompoundMode="true">
+        <img id="u12198_img" class="singleImg img " src="images/调价操作流程/u12197.png"/>
+        <div id="u12198p000" class="ax_vector_shape" WidgetTopLeftX="-0.4375" WidgetTopLeftY="-0.166666666666667" WidgetTopRightX="0.4375" WidgetTopRightY="-0.166666666666667" WidgetBottomLeftX="-0.4375" WidgetBottomLeftY="0" WidgetBottomRightX="0.4375" WidgetBottomRightY="0">
+          <img id="u12198p000_img" class="img " src="images/调价操作流程/u12198p000.png"/>
+        </div>
+        <div id="u12198p001" class="ax_vector_shape" WidgetTopLeftX="0" WidgetTopLeftY="-0.5" WidgetTopRightX="7" WidgetTopRightY="-0.5" WidgetBottomLeftX="0" WidgetBottomLeftY="0" WidgetBottomRightX="7" WidgetBottomRightY="0">
+          <img id="u12198p001_img" class="img " src="images/调价操作流程/u12198p001.png"/>
+        </div>
+        <div id="u12198p002" class="ax_vector_shape" WidgetTopLeftX="1.2" WidgetTopLeftY="0" WidgetTopRightX="-0.2" WidgetTopRightY="0" WidgetBottomLeftX="1.2" WidgetBottomLeftY="-0.05" WidgetBottomRightX="-0.2" WidgetBottomRightY="-0.05">
+          <img id="u12198p002_img" class="img " src="images/调价操作流程/u12198p002.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12199" class="ax_default box_3">
+        <div id="u12199_div" class=""></div>
+        <div id="u12199_text" class="text ">
+          <p><span>取消调价操作</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (水平线) -->
+      <div id="u12200" class="ax_default line">
+        <img id="u12200_img" class="img " src="images/定价配置信息/u1319.png"/>
+      </div>
+
+      <!-- Unnamed (菱形) -->
+      <div id="u12201" class="ax_default box_3">
+        <img id="u12201_img" class="img " src="images/调价操作流程/u12201.png"/>
+        <div id="u12201_text" class="text ">
+          <p><span>是否权限范围</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12202" class="ax_default box_3">
+        <div id="u12202_div" class=""></div>
+        <div id="u12202_text" class="text ">
+          <p><span>调价成功</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (垂直线) -->
+      <div id="u12203" class="compound ax_default line" WidgetHeight="79" WidgetWidth="1" CompoundMode="true">
+        <img id="u12203_img" class="singleImg img " src="images/调价操作流程/u12203.png"/>
+        <div id="u12203p000" class="ax_vector_shape" WidgetTopLeftX="-0.476190476190476" WidgetTopLeftY="0.166666666666667" WidgetTopRightX="-0.476190476190476" WidgetTopRightY="0" WidgetBottomLeftX="0.464285714285714" WidgetBottomLeftY="0.166666666666667" WidgetBottomRightX="0.464285714285714" WidgetBottomRightY="0">
+          <img id="u12203p000_img" class="img " src="images/调价操作流程/u12203p000.png"/>
+        </div>
+        <div id="u12203p001" class="ax_vector_shape" WidgetTopLeftX="-0.25" WidgetTopLeftY="-0.25" WidgetTopRightX="0" WidgetTopRightY="-0.25" WidgetBottomLeftX="-0.25" WidgetBottomLeftY="19.5" WidgetBottomRightX="0" WidgetBottomRightY="19.5">
+          <img id="u12203p001_img" class="img " src="images/调价操作流程/u12203p001.png"/>
+        </div>
+        <div id="u12203p002" class="ax_vector_shape" WidgetTopLeftX="3.40909090909091" WidgetTopLeftY="0" WidgetTopRightX="3.40909090909091" WidgetTopRightY="0.05" WidgetBottomLeftX="-0.181818181818182" WidgetBottomLeftY="0" WidgetBottomRightX="-0.181818181818182" WidgetBottomRightY="0.05">
+          <img id="u12203p002_img" class="img " src="images/调价操作流程/u12203p002.png"/>
+        </div>
+        <div id="u12203_text" class="text ">
+          <p><span>是</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12204" class="ax_default line">
+        <div id="u12204_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (水平线) -->
+      <div id="u12205" class="ax_default line">
+        <img id="u12205_img" class="img " src="images/调价操作流程/u12193.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12206" class="ax_default box_3">
+        <div id="u12206_div" class=""></div>
+        <div id="u12206_text" class="text ">
+          <p><span>今晚生效</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12207" class="ax_default box_3">
+        <div id="u12207_div" class=""></div>
+        <div id="u12207_text" class="text ">
+          <p><span>立即生效</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (花括号) -->
+      <div id="u12208" class="ax_default line">
+        <img id="u12208_img" class="img " src="images/调价操作流程/u12208.png"/>
+      </div>
+
+      <!-- Unnamed (水平线) -->
+      <div id="u12209" class="compound ax_default line" WidgetHeight="1" WidgetWidth="36" CompoundMode="true">
+        <img id="u12209_img" class="singleImg img " src="images/调价操作流程/u12209.png"/>
+        <div id="u12209p000" class="ax_vector_shape" WidgetTopLeftX="-0.428571428571429" WidgetTopLeftY="0" WidgetTopRightX="0.428571428571429" WidgetTopRightY="0" WidgetBottomLeftX="-0.428571428571429" WidgetBottomLeftY="0.166666666666667" WidgetBottomRightX="0.428571428571429" WidgetBottomRightY="0.166666666666667">
+          <img id="u12209p000_img" class="img " src="images/调价操作流程/u12209p000.png"/>
+        </div>
+        <div id="u12209p001" class="ax_vector_shape" WidgetTopLeftX="-0.181818181818182" WidgetTopLeftY="-0.05" WidgetTopRightX="1.45454545454545" WidgetTopRightY="-0.05" WidgetBottomLeftX="-0.181818181818182" WidgetBottomLeftY="0" WidgetBottomRightX="1.45454545454545" WidgetBottomRightY="0">
+          <img id="u12209p001_img" class="img " src="images/调价操作流程/u12209p001.png"/>
+        </div>
+        <div id="u12209p002" class="ax_vector_shape" WidgetTopLeftX="-9.25" WidgetTopLeftY="-0.25" WidgetTopRightX="-0.25" WidgetTopRightY="-0.25" WidgetBottomLeftX="-9.25" WidgetBottomLeftY="0" WidgetBottomRightX="-0.25" WidgetBottomRightY="0">
+          <img id="u12209p002_img" class="img " src="images/调价操作流程/u12209p002.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12210" class="ax_default box_3">
+        <div id="u12210_div" class=""></div>
+        <div id="u12210_text" class="text ">
+          <p><span>调价记录</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (垂直线) -->
+      <div id="u12211" class="compound ax_default line" WidgetHeight="62" WidgetWidth="1" CompoundMode="true">
+        <img id="u12211_img" class="singleImg img " src="images/调价操作流程/u12211.png"/>
+        <div id="u12211p000" class="ax_vector_shape" WidgetTopLeftX="-0.455882352941176" WidgetTopLeftY="0.25" WidgetTopRightX="-0.455882352941176" WidgetTopRightY="0" WidgetBottomLeftX="0.455882352941176" WidgetBottomLeftY="0.25" WidgetBottomRightX="0.455882352941176" WidgetBottomRightY="0">
+          <img id="u12211p000_img" class="img " src="images/调价操作流程/u12211p000.png"/>
+        </div>
+        <div id="u12211p001" class="ax_vector_shape" WidgetTopLeftX="-0.25" WidgetTopLeftY="-0.25" WidgetTopRightX="0" WidgetTopRightY="-0.25" WidgetBottomLeftX="-0.25" WidgetBottomLeftY="15.25" WidgetBottomRightX="0" WidgetBottomRightY="15.25">
+          <img id="u12211p001_img" class="img " src="images/调价操作流程/u12203p001.png"/>
+        </div>
+        <div id="u12211p002" class="ax_vector_shape" WidgetTopLeftX="2.63636363636364" WidgetTopLeftY="0" WidgetTopRightX="2.63636363636364" WidgetTopRightY="0.0454545454545455" WidgetBottomLeftX="-0.181818181818182" WidgetBottomLeftY="0" WidgetBottomRightX="-0.181818181818182" WidgetBottomRightY="0.0454545454545455">
+          <img id="u12211p002_img" class="img " src="images/调价操作流程/u12211p002.png"/>
+        </div>
+        <div id="u12211_text" class="text ">
+          <p><span>确定</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (水平线) -->
+      <div id="u12212" class="compound ax_default line" WidgetHeight="1" WidgetWidth="45" CompoundMode="true">
+        <img id="u12212_img" class="singleImg img " src="images/调价操作流程/u12212.png"/>
+        <div id="u12212p000" class="ax_vector_shape" WidgetTopLeftX="-0.44" WidgetTopLeftY="-0.166666666666667" WidgetTopRightX="0.46" WidgetTopRightY="-0.166666666666667" WidgetBottomLeftX="-0.44" WidgetBottomLeftY="0" WidgetBottomRightX="0.46" WidgetBottomRightY="0">
+          <img id="u12212p000_img" class="img " src="images/调价操作流程/u12212p000.png"/>
+        </div>
+        <div id="u12212p001" class="ax_vector_shape" WidgetTopLeftX="-0.25" WidgetTopLeftY="-0.5" WidgetTopRightX="11" WidgetTopRightY="-0.5" WidgetBottomLeftX="-0.25" WidgetBottomLeftY="0" WidgetBottomRightX="11" WidgetBottomRightY="0">
+          <img id="u12212p001_img" class="img " src="images/调价操作流程/u12212p001.png"/>
+        </div>
+        <div id="u12212p002" class="ax_vector_shape" WidgetTopLeftX="2.05" WidgetTopLeftY="0" WidgetTopRightX="-0.2" WidgetTopRightY="0" WidgetBottomLeftX="2.05" WidgetBottomLeftY="-0.05" WidgetBottomRightX="-0.2" WidgetBottomRightY="-0.05">
+          <img id="u12212p002_img" class="img " src="images/调价操作流程/u12212p002.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12213" class="ax_default box_3">
+        <div id="u12213_div" class=""></div>
+        <div id="u12213_text" class="text ">
+          <p><span>定价基数</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12214" class="ax_default box_3">
+        <div id="u12214_div" class=""></div>
+        <div id="u12214_text" class="text ">
+          <p><span>成本利率</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12215" class="ax_default line">
+        <div id="u12215_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (垂直线) -->
+      <div id="u12216" class="ax_default line">
+        <img id="u12216_img" class="img " src="images/调价操作流程/u12216.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12217" class="ax_default box_3">
+        <div id="u12217_div" class=""></div>
+        <div id="u12217_text" class="text ">
+          <p><span>定价组利率</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12218" class="ax_default box_3">
+        <div id="u12218_div" class=""></div>
+        <div id="u12218_text" class="text ">
+          <p><span>行情利率</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12219" class="ax_default label">
+        <div id="u12219_div" class=""></div>
+        <div id="u12219_text" class="text ">
+          <p><span>+</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (水平线) -->
+      <div id="u12220" class="compound ax_default line" WidgetHeight="1" WidgetWidth="194" CompoundMode="true">
+        <img id="u12220_img" class="singleImg img " src="images/调价操作流程/u12220.png"/>
+        <div id="u12220p000" class="ax_vector_shape" WidgetTopLeftX="-0.485" WidgetTopLeftY="0" WidgetTopRightX="0.485" WidgetTopRightY="0" WidgetBottomLeftX="-0.485" WidgetBottomLeftY="0.166666666666667" WidgetBottomRightX="0.485" WidgetBottomRightY="0.166666666666667">
+          <img id="u12220p000_img" class="img " src="images/调价操作流程/u12220p000.png"/>
+        </div>
+        <div id="u12220p001" class="ax_vector_shape" WidgetTopLeftX="-0.25" WidgetTopLeftY="-0.25" WidgetTopRightX="48.25" WidgetTopRightY="-0.25" WidgetBottomLeftX="-0.25" WidgetBottomLeftY="0" WidgetBottomRightX="48.25" WidgetBottomRightY="0">
+          <img id="u12220p001_img" class="img " src="images/调价操作流程/u12220p001.png"/>
+        </div>
+        <div id="u12220p002" class="ax_vector_shape" WidgetTopLeftX="8.63636363636364" WidgetTopLeftY="0.05" WidgetTopRightX="-0.181818181818182" WidgetTopRightY="0.05" WidgetBottomLeftX="8.63636363636364" WidgetBottomLeftY="0" WidgetBottomRightX="-0.181818181818182" WidgetBottomRightY="0">
+          <img id="u12220p002_img" class="img " src="images/调价操作流程/u12220p002.png"/>
+        </div>
+        <div id="u12220_text" class="text ">
+          <p><span>否</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12221" class="ax_default box_3">
+        <div id="u12221_div" class=""></div>
+        <div id="u12221_text" class="text ">
+          <p><span>生成调价申请</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (垂直线) -->
+      <div id="u12222" class="compound ax_default line" WidgetHeight="20" WidgetWidth="1" CompoundMode="true">
+        <img id="u12222_img" class="singleImg img " src="images/调价操作流程/u12222.png"/>
+        <div id="u12222p000" class="ax_vector_shape" WidgetTopLeftX="-0.384615384615385" WidgetTopLeftY="0" WidgetTopRightX="-0.384615384615385" WidgetTopRightY="-0.25" WidgetBottomLeftX="0.384615384615385" WidgetBottomLeftY="0" WidgetBottomRightX="0.384615384615385" WidgetBottomRightY="-0.25">
+          <img id="u12222p000_img" class="img " src="images/调价操作流程/u12222p000.png"/>
+        </div>
+        <div id="u12222p001" class="ax_vector_shape" WidgetTopLeftX="-0.25" WidgetTopLeftY="0" WidgetTopRightX="0" WidgetTopRightY="0" WidgetBottomLeftX="-0.25" WidgetBottomLeftY="5" WidgetBottomRightX="0" WidgetBottomRightY="5">
+          <img id="u12222p001_img" class="img " src="images/调价操作流程/u12222p001.png"/>
+        </div>
+        <div id="u12222p002" class="ax_vector_shape" WidgetTopLeftX="0.727272727272727" WidgetTopLeftY="0" WidgetTopRightX="0.727272727272727" WidgetTopRightY="0.05" WidgetBottomLeftX="-0.181818181818182" WidgetBottomLeftY="0" WidgetBottomRightX="-0.181818181818182" WidgetBottomRightY="0.05">
+          <img id="u12222p002_img" class="img " src="images/调价操作流程/u12222p002.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12223" class="ax_default box_3">
+        <div id="u12223_div" class=""></div>
+        <div id="u12223_text" class="text ">
+          <p><span>调价审批</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (垂直线) -->
+      <div id="u12224" class="compound ax_default line" WidgetHeight="24" WidgetWidth="1" CompoundMode="true">
+        <img id="u12224_img" class="singleImg img " src="images/调价操作流程/u12224.png"/>
+        <div id="u12224p000" class="ax_vector_shape" WidgetTopLeftX="-0.4" WidgetTopLeftY="0" WidgetTopRightX="-0.4" WidgetTopRightY="-0.25" WidgetBottomLeftX="0.4" WidgetBottomLeftY="0" WidgetBottomRightX="0.4" WidgetBottomRightY="-0.25">
+          <img id="u12224p000_img" class="img " src="images/调价操作流程/u12224p000.png"/>
+        </div>
+        <div id="u12224p001" class="ax_vector_shape" WidgetTopLeftX="-0.25" WidgetTopLeftY="0" WidgetTopRightX="0" WidgetTopRightY="0" WidgetBottomLeftX="-0.25" WidgetBottomLeftY="6" WidgetBottomRightX="0" WidgetBottomRightY="6">
+          <img id="u12224p001_img" class="img " src="images/调价操作流程/u12222p001.png"/>
+        </div>
+        <div id="u12224p002" class="ax_vector_shape" WidgetTopLeftX="0.909090909090909" WidgetTopLeftY="0" WidgetTopRightX="0.909090909090909" WidgetTopRightY="0.05" WidgetBottomLeftX="-0.181818181818182" WidgetBottomLeftY="0" WidgetBottomRightX="-0.181818181818182" WidgetBottomRightY="0.05">
+          <img id="u12224p002_img" class="img " src="images/调价操作流程/u12222p002.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (菱形) -->
+      <div id="u12225" class="ax_default box_3">
+        <img id="u12225_img" class="img " src="images/调价操作流程/u12225.png"/>
+        <div id="u12225_text" class="text ">
+          <p><span>是否同意</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (水平线) -->
+      <div id="u12226" class="compound ax_default line" WidgetHeight="1" WidgetWidth="194" CompoundMode="true">
+        <img id="u12226_img" class="singleImg img " src="images/调价操作流程/u12226.png"/>
+        <div id="u12226p000" class="ax_vector_shape" WidgetTopLeftX="-0.48989898989899" WidgetTopLeftY="-0.166666666666667" WidgetTopRightX="0.48989898989899" WidgetTopRightY="-0.166666666666667" WidgetBottomLeftX="-0.48989898989899" WidgetBottomLeftY="0" WidgetBottomRightX="0.48989898989899" WidgetBottomRightY="0">
+          <img id="u12226p000_img" class="img " src="images/调价操作流程/u12226p000.png"/>
+        </div>
+        <div id="u12226p001" class="ax_vector_shape" WidgetTopLeftX="-0.2" WidgetTopLeftY="0" WidgetTopRightX="9.5" WidgetTopRightY="0" WidgetBottomLeftX="-0.2" WidgetBottomLeftY="0.05" WidgetBottomRightX="9.5" WidgetBottomRightY="0.05">
+          <img id="u12226p001_img" class="img " src="images/调价操作流程/u12226p001.png"/>
+        </div>
+        <div id="u12226p002" class="ax_vector_shape" WidgetTopLeftX="-48.5" WidgetTopLeftY="-0.5" WidgetTopRightX="0" WidgetTopRightY="-0.5" WidgetBottomLeftX="-48.5" WidgetBottomLeftY="0" WidgetBottomRightX="0" WidgetBottomRightY="0">
+          <img id="u12226p002_img" class="img " src="images/调价操作流程/u12226p002.png"/>
+        </div>
+        <div id="u12226_text" class="text ">
+          <p><span>是</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (水平线) -->
+      <div id="u12227" class="compound ax_default line" WidgetHeight="1" WidgetWidth="47" CompoundMode="true">
+        <img id="u12227_img" class="singleImg img " src="images/调价操作流程/u12227.png"/>
+        <div id="u12227p000" class="ax_vector_shape" WidgetTopLeftX="-0.461538461538462" WidgetTopLeftY="0" WidgetTopRightX="0.442307692307692" WidgetTopRightY="0" WidgetBottomLeftX="-0.461538461538462" WidgetBottomLeftY="0.166666666666667" WidgetBottomRightX="0.442307692307692" WidgetBottomRightY="0.166666666666667">
+          <img id="u12227p000_img" class="img " src="images/调价操作流程/u12227p000.png"/>
+        </div>
+        <div id="u12227p001" class="ax_vector_shape" WidgetTopLeftX="0" WidgetTopLeftY="-0.25" WidgetTopRightX="11.75" WidgetTopRightY="-0.25" WidgetBottomLeftX="0" WidgetBottomLeftY="0" WidgetBottomRightX="11.75" WidgetBottomRightY="0">
+          <img id="u12227p001_img" class="img " src="images/调价操作流程/u12197p001.png"/>
+        </div>
+        <div id="u12227p002" class="ax_vector_shape" WidgetTopLeftX="1.95454545454545" WidgetTopLeftY="0.05" WidgetTopRightX="-0.181818181818182" WidgetTopRightY="0.05" WidgetBottomLeftX="1.95454545454545" WidgetBottomLeftY="0" WidgetBottomRightX="-0.181818181818182" WidgetBottomRightY="0">
+          <img id="u12227p002_img" class="img " src="images/调价操作流程/u12222p002.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (垂直线) -->
+      <div id="u12228" class="compound ax_default line" WidgetHeight="55" WidgetWidth="1" CompoundMode="true">
+        <img id="u12228_img" class="singleImg img " src="images/调价操作流程/u12228.png"/>
+        <div id="u12228p000" class="ax_vector_shape" WidgetTopLeftX="-0.45" WidgetTopLeftY="0.166666666666667" WidgetTopRightX="-0.45" WidgetTopRightY="0" WidgetBottomLeftX="0.466666666666667" WidgetBottomLeftY="0.166666666666667" WidgetBottomRightX="0.466666666666667" WidgetBottomRightY="0">
+          <img id="u12228p000_img" class="img " src="images/调价操作流程/u12228p000.png"/>
+        </div>
+        <div id="u12228p001" class="ax_vector_shape" WidgetTopLeftX="-0.25" WidgetTopLeftY="0" WidgetTopRightX="0" WidgetTopRightY="0" WidgetBottomLeftX="-0.25" WidgetBottomLeftY="13.75" WidgetBottomRightX="0" WidgetBottomRightY="13.75">
+          <img id="u12228p001_img" class="img " src="images/调价操作流程/u12222p001.png"/>
+        </div>
+        <div id="u12228p002" class="ax_vector_shape" WidgetTopLeftX="2.31818181818182" WidgetTopLeftY="0" WidgetTopRightX="2.31818181818182" WidgetTopRightY="0.0454545454545455" WidgetBottomLeftX="-0.181818181818182" WidgetBottomLeftY="0" WidgetBottomRightX="-0.181818181818182" WidgetBottomRightY="0.0454545454545455">
+          <img id="u12228p002_img" class="img " src="images/调价操作流程/u12228p002.png"/>
+        </div>
+        <div id="u12228_text" class="text ">
+          <p><span>否</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12229" class="ax_default box_3">
+        <div id="u12229_div" class=""></div>
+        <div id="u12229_text" class="text ">
+          <p><span>调价不成功</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12230" class="ax_default box_3">
+        <div id="u12230_div" class=""></div>
+        <div id="u12230_text" class="text ">
+          <p><span>活动预览</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12231" class="ax_default box_3">
+        <div id="u12231_div" class=""></div>
+        <div id="u12231_text" class="text ">
+          <p><span>活动申请</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12232" class="ax_default box_3">
+        <div id="u12232_div" class=""></div>
+        <div id="u12232_text" class="text ">
+          <p><span>活动记录</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12233" class="ax_default box_3">
+        <div id="u12233_div" class=""></div>
+        <div id="u12233_text" class="text ">
+          <p><span>活动审批</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (水平线) -->
+      <div id="u12234" class="compound ax_default line" WidgetHeight="1" WidgetWidth="23" CompoundMode="true">
+        <img id="u12234_img" class="singleImg img " src="images/调价操作流程/u12234.png"/>
+        <div id="u12234p000" class="ax_vector_shape" WidgetTopLeftX="-0.392857142857143" WidgetTopLeftY="-0.166666666666667" WidgetTopRightX="0.428571428571429" WidgetTopRightY="-0.166666666666667" WidgetBottomLeftX="-0.392857142857143" WidgetBottomLeftY="0" WidgetBottomRightX="0.428571428571429" WidgetBottomRightY="0">
+          <img id="u12234p000_img" class="img " src="images/调价操作流程/u12234p000.png"/>
+        </div>
+        <div id="u12234p001" class="ax_vector_shape" WidgetTopLeftX="-0.25" WidgetTopLeftY="-0.5" WidgetTopRightX="5.5" WidgetTopRightY="-0.5" WidgetBottomLeftX="-0.25" WidgetBottomLeftY="0" WidgetBottomRightX="5.5" WidgetBottomRightY="0">
+          <img id="u12234p001_img" class="img " src="images/调价操作流程/u12212p001.png"/>
+        </div>
+        <div id="u12234p002" class="ax_vector_shape" WidgetTopLeftX="0.95" WidgetTopLeftY="0" WidgetTopRightX="-0.2" WidgetTopRightY="0" WidgetBottomLeftX="0.95" WidgetBottomLeftY="-0.05" WidgetBottomRightX="-0.2" WidgetBottomRightY="-0.05">
+          <img id="u12234p002_img" class="img " src="images/调价操作流程/u12198p002.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (水平线) -->
+      <div id="u12235" class="compound ax_default line" WidgetHeight="1" WidgetWidth="23" CompoundMode="true">
+        <img id="u12235_img" class="singleImg img " src="images/调价操作流程/u12235.png"/>
+        <div id="u12235p000" class="ax_vector_shape" WidgetTopLeftX="-0.392857142857143" WidgetTopLeftY="-0.166666666666667" WidgetTopRightX="0.428571428571429" WidgetTopRightY="-0.166666666666667" WidgetBottomLeftX="-0.392857142857143" WidgetBottomLeftY="0" WidgetBottomRightX="0.428571428571429" WidgetBottomRightY="0">
+          <img id="u12235p000_img" class="img " src="images/调价操作流程/u12235p000.png"/>
+        </div>
+        <div id="u12235p001" class="ax_vector_shape" WidgetTopLeftX="-0.181818181818182" WidgetTopLeftY="0" WidgetTopRightX="0.863636363636364" WidgetTopRightY="0" WidgetBottomLeftX="-0.181818181818182" WidgetBottomLeftY="0.05" WidgetBottomRightX="0.863636363636364" WidgetBottomRightY="0.05">
+          <img id="u12235p001_img" class="img " src="images/调价操作流程/u12222p002.png"/>
+        </div>
+        <div id="u12235p002" class="ax_vector_shape" WidgetTopLeftX="-5.75" WidgetTopLeftY="-0.5" WidgetTopRightX="0" WidgetTopRightY="-0.5" WidgetBottomLeftX="-5.75" WidgetBottomLeftY="0" WidgetBottomRightX="0" WidgetBottomRightY="0">
+          <img id="u12235p002_img" class="img " src="images/调价操作流程/u12235p002.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (垂直线) -->
+      <div id="u12236" class="compound ax_default line" WidgetHeight="33" WidgetWidth="1" CompoundMode="true">
+        <img id="u12236_img" class="singleImg img " src="images/调价操作流程/u12236.png"/>
+        <div id="u12236p000" class="ax_vector_shape" WidgetTopLeftX="-0.447368421052632" WidgetTopLeftY="0.166666666666667" WidgetTopRightX="-0.447368421052632" WidgetTopRightY="0" WidgetBottomLeftX="0.421052631578947" WidgetBottomLeftY="0.166666666666667" WidgetBottomRightX="0.421052631578947" WidgetBottomRightY="0">
+          <img id="u12236p000_img" class="img " src="images/调价操作流程/u12236p000.png"/>
+        </div>
+        <div id="u12236p001" class="ax_vector_shape" WidgetTopLeftX="-0.5" WidgetTopLeftY="0" WidgetTopRightX="0" WidgetTopRightY="0" WidgetBottomLeftX="-0.5" WidgetBottomLeftY="8.25" WidgetBottomRightX="0" WidgetBottomRightY="8.25">
+          <img id="u12236p001_img" class="img " src="images/调价操作流程/u12236p001.png"/>
+        </div>
+        <div id="u12236p002" class="ax_vector_shape" WidgetTopLeftX="1.31818181818182" WidgetTopLeftY="-0.0454545454545455" WidgetTopRightX="1.31818181818182" WidgetTopRightY="0" WidgetBottomLeftX="-0.181818181818182" WidgetBottomLeftY="-0.0454545454545455" WidgetBottomRightX="-0.181818181818182" WidgetBottomRightY="0">
+          <img id="u12236p002_img" class="img " src="images/调价操作流程/u12236p002.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (垂直线) -->
+      <div id="u12237" class="compound ax_default line" WidgetHeight="33" WidgetWidth="1" CompoundMode="true">
+        <img id="u12237_img" class="singleImg img " src="images/调价操作流程/u12236.png"/>
+        <div id="u12237p000" class="ax_vector_shape" WidgetTopLeftX="-0.421052631578947" WidgetTopLeftY="0.166666666666667" WidgetTopRightX="-0.421052631578947" WidgetTopRightY="0" WidgetBottomLeftX="0.447368421052632" WidgetBottomLeftY="0.166666666666667" WidgetBottomRightX="0.447368421052632" WidgetBottomRightY="0">
+          <img id="u12237p000_img" class="img " src="images/调价操作流程/u12237p000.png"/>
+        </div>
+        <div id="u12237p001" class="ax_vector_shape" WidgetTopLeftX="-0.5" WidgetTopLeftY="-0.25" WidgetTopRightX="0" WidgetTopRightY="-0.25" WidgetBottomLeftX="-0.5" WidgetBottomLeftY="8" WidgetBottomRightX="0" WidgetBottomRightY="8">
+          <img id="u12237p001_img" class="img " src="images/调价操作流程/u12237p001.png"/>
+        </div>
+        <div id="u12237p002" class="ax_vector_shape" WidgetTopLeftX="1.31818181818182" WidgetTopLeftY="-0.05" WidgetTopRightX="1.31818181818182" WidgetTopRightY="0" WidgetBottomLeftX="-0.181818181818182" WidgetBottomLeftY="-0.05" WidgetBottomRightX="-0.181818181818182" WidgetBottomRightY="0">
+          <img id="u12237p002_img" class="img " src="images/调价操作流程/u12209p001.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (垂直线) -->
+      <div id="u12238" class="compound ax_default line" WidgetHeight="33" WidgetWidth="1" CompoundMode="true">
+        <img id="u12238_img" class="singleImg img " src="images/调价操作流程/u12236.png"/>
+        <div id="u12238p000" class="ax_vector_shape" WidgetTopLeftX="-0.447368421052632" WidgetTopLeftY="0" WidgetTopRightX="-0.447368421052632" WidgetTopRightY="-0.166666666666667" WidgetBottomLeftX="0.421052631578947" WidgetBottomLeftY="0" WidgetBottomRightX="0.421052631578947" WidgetBottomRightY="-0.166666666666667">
+          <img id="u12238p000_img" class="img " src="images/调价操作流程/u12238p000.png"/>
+        </div>
+        <div id="u12238p001" class="ax_vector_shape" WidgetTopLeftX="-0.25" WidgetTopLeftY="0" WidgetTopRightX="0" WidgetTopRightY="0" WidgetBottomLeftX="-0.25" WidgetBottomLeftY="8.25" WidgetBottomRightX="0" WidgetBottomRightY="8.25">
+          <img id="u12238p001_img" class="img " src="images/调价操作流程/u12222p001.png"/>
+        </div>
+        <div id="u12238p002" class="ax_vector_shape" WidgetTopLeftX="1.31818181818182" WidgetTopLeftY="0" WidgetTopRightX="1.31818181818182" WidgetTopRightY="0.0454545454545455" WidgetBottomLeftX="-0.181818181818182" WidgetBottomLeftY="0" WidgetBottomRightX="-0.181818181818182" WidgetBottomRightY="0.0454545454545455">
+          <img id="u12238p002_img" class="img " src="images/调价操作流程/u12238p002.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (水平线) -->
+      <div id="u12239" class="ax_default line">
+        <img id="u12239_img" class="img " src="images/调价操作流程/u12239.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12240" class="ax_default line">
+        <div id="u12240_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12241" class="ax_default box_3">
+        <div id="u12241_div" class=""></div>
+        <div id="u12241_text" class="text ">
+          <p><span>人员调价</span></p><p><span>权限管理</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (水平线) -->
+      <div id="u12242" class="ax_default line">
+        <img id="u12242_img" class="img " src="images/调价操作流程/u12161.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12243" class="ax_default box_3">
+        <div id="u12243_div" class=""></div>
+        <div id="u12243_text" class="text ">
+          <p><span>成本利率</span></p><p><span>阈值下限</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12244" class="ax_default box_3">
+        <div id="u12244_div" class=""></div>
+        <div id="u12244_text" class="text ">
+          <p><span>涨跌幅</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12245" class="ax_default box_3">
+        <div id="u12245_div" class=""></div>
+        <div id="u12245_text" class="text ">
+          <p><span>亏本权限</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12246" class="ax_default box_3">
+        <div id="u12246_div" class=""></div>
+        <div id="u12246_text" class="text ">
+          <p><span>SKU数量</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12247" class="ax_default line">
+        <div id="u12247_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (水平线) -->
+      <div id="u12248" class="ax_default line">
+        <img id="u12248_img" class="img " src="images/定价配置信息/u717.png"/>
+      </div>
+
+      <!-- Unnamed (水平线) -->
+      <div id="u12249" class="ax_default line">
+        <img id="u12249_img" class="img " src="images/定价配置信息/u717.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12250" class="ax_default box_3">
+        <div id="u12250_div" class=""></div>
+        <div id="u12250_text" class="text ">
+          <p><span>控制价格波动</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (水平线) -->
+      <div id="u12251" class="ax_default line">
+        <img id="u12251_img" class="img " src="images/调价操作流程/u12251.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12252" class="ax_default box_3">
+        <div id="u12252_div" class=""></div>
+        <div id="u12252_text" class="text ">
+          <p><span>控制最低利润</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (水平线) -->
+      <div id="u12253" class="ax_default line">
+        <img id="u12253_img" class="img " src="images/调价操作流程/u12251.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12254" class="ax_default box_3">
+        <div id="u12254_div" class=""></div>
+        <div id="u12254_text" class="text ">
+          <p><span>保障工作质量和饱和度</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (水平线) -->
+      <div id="u12255" class="ax_default line">
+        <img id="u12255_img" class="img " src="images/调价操作流程/u12251.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12256" class="ax_default box_3">
+        <div id="u12256_div" class=""></div>
+        <div id="u12256_text" class="text ">
+          <p><span>甩货、促销</span></p><p><span>权限</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (水平线) -->
+      <div id="u12257" class="ax_default line">
+        <img id="u12257_img" class="img " src="images/调价操作流程/u12251.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12258" class="ax_default _一级标题">
+        <div id="u12258_div" class=""></div>
+        <div id="u12258_text" class="text ">
+          <p><span>商品流程框架</span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
